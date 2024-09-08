@@ -1,6 +1,8 @@
 package main //El archivo principal de Go siempre debe importar main
 
 import (
+	"fmt"
+
 	"github.com/DuocGauss/Godesde0/variables"
 )
 
@@ -8,4 +10,7 @@ import (
 func main() {
 	variables.MuestroEnteros()
 	variables.RestoVariables()
+
+	estado, texto := variables.RetornoTexto(100)
+	fmt.Println(estado, texto)
 }
