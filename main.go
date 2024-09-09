@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
+	"github.com/DuocGauss/Godesde0/ejercicios"
 	"github.com/DuocGauss/Godesde0/variables"
 )
 
@@ -41,4 +42,8 @@ func main() {
 	default:
 		fmt.Println("Su PC es", os, "Se utilizo condicionales con switch")
 	}
+
+	//Ejercicio 01
+	numero, texto := ejercicios.DevuelveEntero("101")
+	fmt.Println(numero, texto)
 }
