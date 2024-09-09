@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/DuocGauss/Godesde0/ejercicios"
+	"github.com/DuocGauss/Godesde0/teclado"
 	"github.com/DuocGauss/Godesde0/variables"
 )
 
@@ -46,4 +47,7 @@ func main() {
 	//Ejercicio 01
 	numero, texto := ejercicios.DevuelveEntero("101")
 	fmt.Println(numero, texto)
+
+	//Ingresos de datos desde la terminal (input)
+	teclado.IngreseNumeros()
 }
