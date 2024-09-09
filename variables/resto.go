@@ -11,6 +11,7 @@ var Estado bool
 var Sueldo float32
 var Fecha time.Time
 
+// Ejemplo de método en Go
 func RestoVariables() {
 	Nombre = "Gustavo"
 	Estado = true
@@ -24,6 +25,7 @@ func RestoVariables() {
 
 }
 
+// Ejemplo de funciones en Go
 func RetornoTexto(numero int) (bool, string) {
 	var texto string
 	texto = strconv.Itoa(numero)
