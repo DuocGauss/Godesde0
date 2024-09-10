@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/DuocGauss/Godesde0/ejercicios"
+	"github.com/DuocGauss/Godesde0/iteraciones"
 	"github.com/DuocGauss/Godesde0/teclado"
 	"github.com/DuocGauss/Godesde0/variables"
 )
@@ -50,4 +51,10 @@ func main() {
 
 	//Ingresos de datos desde la terminal (input)
 	teclado.IngreseNumeros()
+
+	//Ciclos utilizando for
+	iteraciones.Iteracion()
+
+	//Ejercicio 02
+	ejercicios.Multiplicar()
 }
