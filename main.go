@@ -1,13 +1,14 @@
 package main //El archivo principal de Go siempre debe importar main
 
 import (
-	"fmt"
+	/*"fmt"
 	"runtime"
 
 	"github.com/DuocGauss/Godesde0/ejercicios"
 	"github.com/DuocGauss/Godesde0/iteraciones"
 	"github.com/DuocGauss/Godesde0/teclado"
-	"github.com/DuocGauss/Godesde0/variables"
+	"github.com/DuocGauss/Godesde0/variables"*/
+	"github.com/DuocGauss/Godesde0/files"
 )
 
 //runtime permite hacer un escaneo de las especificaciones de tu computadora, es bueno esta libreria para
@@ -17,7 +18,7 @@ import (
 
 // Función principal de main, se debe llamar main y no debe tener nada entre sus parentesis
 func main() {
-	variables.MuestroEnteros()
+	/*variables.MuestroEnteros()
 	variables.RestoVariables()
 
 	estado, texto := variables.RetornoTexto(100)
@@ -56,5 +57,11 @@ func main() {
 	iteraciones.Iteracion()
 
 	//Ejercicio 02
-	ejercicios.Multiplicar()
+	fmt.Println(ejercicios.TablaMultiplicar()) */
+
+	//files
+	/*files.GrabarTabla()*/
+	files.ConcatenarTabla()
+	files.LeerTablaConsola()
+
 }
