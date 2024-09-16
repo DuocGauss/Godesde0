@@ -8,8 +8,9 @@ import (
 	"github.com/DuocGauss/Godesde0/iteraciones"
 	"github.com/DuocGauss/Godesde0/teclado"
 	"github.com/DuocGauss/Godesde0/variables"
-	"github.com/DuocGauss/Godesde0/files"*/
-	"github.com/DuocGauss/Godesde0/funciones"
+	"github.com/DuocGauss/Godesde0/files"
+	"github.com/DuocGauss/Godesde0/funciones"*/
+	"github.com/DuocGauss/Godesde0/arreglos_slices"
 )
 
 //runtime permite hacer un escaneo de las especificaciones de tu computadora, es bueno esta libreria para
@@ -66,10 +67,15 @@ func main() {
 	files.LeerTablaConsola()*/
 
 	//Funciones anónimas
-	funciones.Calculos()
+	//funciones.Calculos()
 	//Función clousure
-	funciones.LlamarClousure()
+	//funciones.LlamarClousure()
 	//Función de recursión
-	funciones.Exponencia(2)
+	//funciones.Exponencia(2)
+
+	//Arreglos y slices
+	//arreglos_slices.MuestroArreglos()
+	//arreglos_slices.MuestroSlices()
+	arreglos_slices.Capacidad()
 
 }
