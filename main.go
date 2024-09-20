@@ -10,8 +10,9 @@ import (
 	"github.com/DuocGauss/Godesde0/variables"
 	"github.com/DuocGauss/Godesde0/files"
 	"github.com/DuocGauss/Godesde0/funciones"
-	"github.com/DuocGauss/Godesde0/arreglos_slices"*/
-	"github.com/DuocGauss/Godesde0/mapas"
+	"github.com/DuocGauss/Godesde0/arreglos_slices"
+	"github.com/DuocGauss/Godesde0/mapas"*/
+	"github.com/DuocGauss/Godesde0/users"
 )
 
 //runtime permite hacer un escaneo de las especificaciones de tu computadora, es bueno esta libreria para
@@ -80,6 +81,9 @@ func main() {
 	//arreglos_slices.Capacidad()
 
 	//Mapas
-	mapas.MostrarMapa()
+	//mapas.MostrarMapa()
+
+	//Estructuras(Programación orientadas a objetos, entidades)
+	users.AgregarUsuarioAhoraSi()
 
 }

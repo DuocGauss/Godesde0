@@ -28,6 +28,7 @@ func RestoVariables() {
 // Ejemplo de funciones en Go
 func RetornoTexto(numero int) (bool, string) {
 	var texto string
+	//Con Itoa() convierto el int a string
 	texto = strconv.Itoa(numero)
 	return true, texto
 }
