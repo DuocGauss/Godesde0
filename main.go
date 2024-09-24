@@ -11,8 +11,10 @@ import (
 	"github.com/DuocGauss/Godesde0/files"
 	"github.com/DuocGauss/Godesde0/funciones"
 	"github.com/DuocGauss/Godesde0/arreglos_slices"
-	"github.com/DuocGauss/Godesde0/mapas"*/
-	"github.com/DuocGauss/Godesde0/users"
+	"github.com/DuocGauss/Godesde0/mapas"
+	"github.com/DuocGauss/Godesde0/users"*/
+	e "github.com/DuocGauss/Godesde0/ejer_interfaces" //El "e" es un alias de la importación
+	"github.com/DuocGauss/Godesde0/modelos"
 )
 
 //runtime permite hacer un escaneo de las especificaciones de tu computadora, es bueno esta libreria para
@@ -84,6 +86,13 @@ func main() {
 	//mapas.MostrarMapa()
 
 	//Estructuras(Programación orientadas a objetos, entidades)
-	users.AgregarUsuarioAhoraSi()
+	//users.AgregarUsuarioAhoraSi()
+
+	//Interfaces(Asociados a estructuras)
+	Pedro := new(modelos.Hombre)
+	e.HumanosRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	e.HumanosRespirando(Maria)
 
 }

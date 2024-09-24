@@ -15,3 +15,7 @@ func AgregarUsuarioAhoraSi() {
 	u.AddUser(19, "Gustavo", time.Now(), true)
 	fmt.Println(u)
 }
+
+//Si quiero usar los metodos y funciones asociados a la estructura, en este caso User, debo guardar la estructura
+//en una variable, en este caso "u" y para hacer eso debo utilizar la función new(), por ende cuando almaceno
+//la estructura, puedo usar todos sus funciones y metodos asociados a la estructura.
