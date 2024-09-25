@@ -25,6 +25,6 @@ func (m *Mujer) Sexo() string {
 }
 
 func (m *Mujer) EstaVivo() bool {
-	m.vivo = false
-	return false
+	m.vivo = true
+	return true
 }

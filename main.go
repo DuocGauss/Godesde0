@@ -12,9 +12,10 @@ import (
 	"github.com/DuocGauss/Godesde0/funciones"
 	"github.com/DuocGauss/Godesde0/arreglos_slices"
 	"github.com/DuocGauss/Godesde0/mapas"
-	"github.com/DuocGauss/Godesde0/users"*/
+	"github.com/DuocGauss/Godesde0/users"
 	e "github.com/DuocGauss/Godesde0/ejer_interfaces" //El "e" es un alias de la importación
-	"github.com/DuocGauss/Godesde0/modelos"
+	"github.com/DuocGauss/Godesde0/modelos"*/
+	"github.com/DuocGauss/Godesde0/defer_panic"
 )
 
 //runtime permite hacer un escaneo de las especificaciones de tu computadora, es bueno esta libreria para
@@ -89,10 +90,14 @@ func main() {
 	//users.AgregarUsuarioAhoraSi()
 
 	//Interfaces(Asociados a estructuras)
-	Pedro := new(modelos.Hombre)
-	e.HumanosRespirando(Pedro)
+	//Pedro := new(modelos.Hombre)
+	//e.HumanosRespirando(Pedro)
 
-	Maria := new(modelos.Mujer)
-	e.HumanosRespirando(Maria)
+	//Maria := new(modelos.Mujer)
+	//e.HumanosRespirando(Maria)
+
+	//Defer, panic y recover
+	defer_panic.EjemploDefer()
+	defer_panic.EjemploPanic()
 
 }
