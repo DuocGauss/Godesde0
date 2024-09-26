@@ -1,8 +1,8 @@
 package main //El archivo principal de Go siempre debe importar main
 
 import (
-	/*"fmt"
-	"runtime"
+	"fmt"
+	/*"runtime"
 
 	"github.com/DuocGauss/Godesde0/ejercicios"
 	"github.com/DuocGauss/Godesde0/iteraciones"
@@ -14,8 +14,9 @@ import (
 	"github.com/DuocGauss/Godesde0/mapas"
 	"github.com/DuocGauss/Godesde0/users"
 	e "github.com/DuocGauss/Godesde0/ejer_interfaces" //El "e" es un alias de la importación
-	"github.com/DuocGauss/Godesde0/modelos"*/
-	"github.com/DuocGauss/Godesde0/defer_panic"
+	"github.com/DuocGauss/Godesde0/modelos"
+	"github.com/DuocGauss/Godesde0/defer_panic"*/
+	"github.com/DuocGauss/Godesde0/goroutines"
 )
 
 //runtime permite hacer un escaneo de las especificaciones de tu computadora, es bueno esta libreria para
@@ -97,7 +98,21 @@ func main() {
 	//e.HumanosRespirando(Maria)
 
 	//Defer, panic y recover
-	defer_panic.EjemploDefer()
-	defer_panic.EjemploPanic()
+	//defer_panic.EjemploDefer()
+	//defer_panic.EjemploPanic()
+
+	//Rutinas asincronas o Go routines
+	//Para decirle al metodo o rutina que se ejecute de forma asincrona se debe poner "go" al comienzo, ejemplo:
+	//go goroutines.MiNombreLentoo("Gustavo Martínez")
+	go goroutines.MiNombreLentoo("Gustavo Martínez")
+	fmt.Println("Estoy aqui")
+	var x string
+	//Con fmt.Scanln también permite introducir inputs por consola como con bufio
+	//El "&" es un puntero que indica la ruta de la variable que cree la cual es "x"
+	fmt.Scanln(&x)
+	//Con este ejemplo se busca demostrar la funcion de las rutinas asincronas o go routines en go
+	//Como se visualiza la rutina asincrona funciona a la par con mis otras lineas de codigo la cual pide
+	//introduzca un input por consola y ese valor se almacena en la variable x. Por ende las go routine
+	//pueden funcionar de forma pararela durante la ejecución con otras funciones y metodos.
 
 }
