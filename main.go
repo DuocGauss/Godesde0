@@ -104,7 +104,8 @@ func main() {
 	//Rutinas asincronas o Go routines
 	//Para decirle al metodo o rutina que se ejecute de forma asincrona se debe poner "go" al comienzo, ejemplo:
 	//go goroutines.MiNombreLentoo("Gustavo Martínez")
-	go goroutines.MiNombreLentoo("Gustavo Martínez")
+	channel := make(chan bool)
+	go goroutines.MiNombreLentoo("Gustavo Martínez", channel)
 	fmt.Println("Estoy aqui")
 	var x string
 	//Con fmt.Scanln también permite introducir inputs por consola como con bufio
@@ -114,5 +115,11 @@ func main() {
 	//Como se visualiza la rutina asincrona funciona a la par con mis otras lineas de codigo la cual pide
 	//introduzca un input por consola y ese valor se almacena en la variable x. Por ende las go routine
 	//pueden funcionar de forma pararela durante la ejecución con otras funciones y metodos.
+
+	defer func() {
+		<-channel
+	}()
+	//Con el defer siempre, antes de finalizar la función main, recibira a traves del channel el mensaje si se finalizo la goroutine o no
+	//En este caso se confirma si se finalizo la goroutine al recibir un true
 
 }
