@@ -16,8 +16,9 @@ import (
 	e "github.com/DuocGauss/Godesde0/ejer_interfaces" //El "e" es un alias de la importación
 	"github.com/DuocGauss/Godesde0/modelos"
 	"github.com/DuocGauss/Godesde0/defer_panic"
-	"github.com/DuocGauss/Godesde0/goroutines"*/
-	"github.com/DuocGauss/Godesde0/webserver"
+	"github.com/DuocGauss/Godesde0/goroutines"
+	"github.com/DuocGauss/Godesde0/webserver"*/
+	"github.com/DuocGauss/Godesde0/middleware"
 )
 
 //runtime permite hacer un escaneo de las especificaciones de tu computadora, es bueno esta libreria para
@@ -125,6 +126,9 @@ func main() {
 	//En este caso se confirma si se finalizo la goroutine al recibir un true
 
 	//Servidor de desarrollo web en Go
-	webserver.MiWebServer()
+	//webserver.MiWebServer()
+
+	//Middlewares
+	middleware.MiMiddleWare()
 
 }
